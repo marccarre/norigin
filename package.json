@@ -1,0 +1,30 @@
+{
+  "name": "norigin",
+  "version": "1.0.0",
+  "description": "A JSONP service to perform Cross-Origin requests.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "url": "^0.11.0",
+    "node-uuid": "^1.4.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marccarre/norigin.git"
+  },
+  "keywords": [
+    "Cross-Origin",
+    "AnyOrigin",
+    "WhateverOrigin",
+    "JSONP"
+  ],
+  "author": "Marc Carré",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/marccarre/norigin/issues"
+  },
+  "homepage": "https://github.com/marccarre/norigin"
+}
