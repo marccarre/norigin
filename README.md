@@ -1,26 +1,26 @@
 # norigin
 A JSONP service to perform Cross-Origin requests.
 
-*Features*:
+**Features**:
 - Support for both HTTP and HTTPS.
 - Support for both JSON and JSONP.
 - Free, as in both "free speech" (Apache 2.0) and "free beer": no fee, no tracking whatsoever, etc.
 - Scalable: non-blocking I/O using Node.js.
 
-*Usage*:
-
+**Usage**:
 - CURL:
 
-    $ curl -X GET http://norigin.herokuapp.com:1337?url=http://www.google.co.uk/
-    {"contents":"<!doctype html><html[...]</html>"}
+        $ curl -X GET http://norigin.herokuapp.com?url=http://www.google.co.uk/
+        {"contents":"<!doctype html><html[...]</html>"}
 
 - jQuery:
 
-    $.getJSON('http://norigin.herokuapp.com:1337/?url='+url+'&callback=?', function(data) {
-      console.log(data.contents);
-    });
+        $.getJSON('http://norigin.herokuapp.com?url='+url+'&callback=?', function(data) {
+          console.log(data.contents);
+        });
 
-*Set up*:
+**Set up**:
+
 1. Install Node.js.
 2. Install all dependencies by runnning: `npm install`.
 3. Start the server by running: `node index.js`.
