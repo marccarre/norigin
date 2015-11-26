@@ -4,11 +4,16 @@
   "description": "A JSONP service to perform Cross-Origin requests.",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.13.3",
-    "url": "^0.11.0",
-    "node-uuid": "^1.4.7"
+    "express": "4.13.3",
+    "request": "2.67.0",
+    "url": "0.11.0",
+    "node-uuid": "1.4.7"
+  },
+  "engines": {
+    "node": "5.1.0"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
