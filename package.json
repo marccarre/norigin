@@ -1,7 +1,7 @@
 {
   "name": "norigin",
   "version": "1.0.0",
-  "description": "A JSONP service to perform Cross-Origin requests.",
+  "description": "A JSONP Proxy service to perform Cross-Origin requests.",
   "main": "index.js",
   "dependencies": {
     "express": "4.13.3",
@@ -24,7 +24,8 @@
     "Cross-Origin",
     "AnyOrigin",
     "WhateverOrigin",
-    "JSONP"
+    "JSONP",
+    "Proxy"
   ],
   "author": "Marc Carré",
   "license": "Apache-2.0",
