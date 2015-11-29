@@ -1,5 +1,5 @@
 describe('NOrigin server', function() {
-  var server = require('../index');
+  var server = require('../server');
   var request = require('request');
 
   var rootUrl = 'http://localhost:' + server.port;

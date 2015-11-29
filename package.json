@@ -2,7 +2,7 @@
   "name": "norigin",
   "version": "1.0.0",
   "description": "A JSONP Proxy service to perform Cross-Origin requests.",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "4.13.3",
     "node-uuid": "1.4.7",
@@ -17,7 +17,7 @@
     "node": "5.1.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "istanbul cover jasmine"
   },
   "repository": {
