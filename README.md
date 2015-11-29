@@ -4,7 +4,7 @@ A simple JSONP proxy to perform Cross-Origin requests (a-la AnyOrigin or Whateve
 **Features**:
 - Support for both HTTP and HTTPS.
 - Support for both JSON and JSONP.
-- Simple: 42 lines of JavaScript code.
+- Simple: 55 lines of JavaScript code.
 - Scalable: non-blocking I/O using Node.js.
 - Free, as in both "free speech" (Apache 2.0) and "free beer": no fee, no tracking whatsoever, etc.
 
