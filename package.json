@@ -1,6 +1,6 @@
 {
   "name": "norigin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A JSONP Proxy service to perform Cross-Origin requests.",
   "main": "server.js",
   "dependencies": {
