@@ -9,7 +9,7 @@ send = function(id, callback, resp, statusCode, body) {
     : resp.status(statusCode).jsonp(body);
   (statusCode === 200)
     ? console.log('[' + id + '] Response: ' + statusCode + ' - Content-Type: ' + resp.get('Content-Type') + ' - ' + body.length + ' bytes.')
-    : console.log('[' + id + '] Response: ' + statusCode + ' - ' + body);
+    : console.log('[' + id + '] Response: ' + statusCode + ' - Content: "' + body + '"');
 };
 
 var app = express();
@@ -39,3 +39,8 @@ var port = process.env.PORT || 1337;
 app.listen(port, function() {
   console.log('Listening on port ' + port);
 });
+
+module.exports = {
+  app:  app,
+  port: port
+};
