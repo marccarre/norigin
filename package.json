@@ -16,7 +16,8 @@
     "jslint": "0.9.5"
   },
   "engines": {
-    "node": "5.1.0"
+    "node": "8.1.x",
+    "npm": "5.0.x"
   },
   "scripts": {
     "start": "node server.js",
