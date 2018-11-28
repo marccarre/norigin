@@ -3,7 +3,7 @@
 'use strict';
 var express = require('express');
 var url     = require('url');
-var uuid    = require('node-uuid');
+var uuid    = require('uuid');
 var request = require('request');
 
 function send(id, callback, resp, statusCode, body) {
