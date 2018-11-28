@@ -10,10 +10,10 @@
     "url": "0.11.0"
   },
   "devDependencies": {
-    "jasmine": "2.3.2",
-    "istanbul": "0.4.1",
-    "jshint": "2.8.0",
-    "jslint": "0.9.5"
+    "jasmine": "3.3.0",
+    "istanbul": "0.4.5",
+    "jshint": "2.9.6",
+    "jslint": "0.12.0"
   },
   "engines": {
     "node": "8.1.x",
