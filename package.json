@@ -4,7 +4,7 @@
   "description": "A JSONP Proxy service to perform Cross-Origin requests.",
   "main": "server.js",
   "dependencies": {
-    "express": "4.13.3",
+    "express": "4.16.4",
     "uuid": "3.3.2",
     "request": "2.67.0",
     "url": "0.11.0"
