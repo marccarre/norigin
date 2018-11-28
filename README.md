@@ -1,14 +1,16 @@
 # norigin
 A simple JSONP proxy to perform Cross-Origin requests (a-la AnyOrigin or WhateverOrigin).
 
-**Features**:
+## Features
+
 - Support for both HTTP and HTTPS.
 - Support for both JSON and JSONP.
 - Simple: 55 lines of JavaScript code.
 - Scalable: non-blocking I/O using Node.js.
 - Free, as in both "free speech" (Apache 2.0) and "free beer": no fee, no tracking whatsoever, etc.
 
-**Usage**:
+## Usage
+
 - CURL:
 
         $ curl -X GET http://norigin.herokuapp.com?url=https://httpbin.org/html
@@ -23,7 +25,7 @@ A simple JSONP proxy to perform Cross-Origin requests (a-la AnyOrigin or Whateve
           console.log(data);
         });
 
-**Set up**:
+## Set up
 
 1. Install Node.js.
 2. Install all dependencies by runnning: `npm install`.
