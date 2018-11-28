@@ -102,7 +102,7 @@ describe('NOrigin server', function () {
             expect(response.statusCode).toEqual(500);
             expect(response.headers['content-type']).toContain('application/json');
             expect(error).toBeNull();
-            expect(data).toEqual('{"code":"ECONNREFUSED","errno":"ECONNREFUSED","syscall":"connect","address":"50.63.202.57","port":443}');
+            expect(data).toEqual('{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagedoesnotexist.com","host":"thispagedoesnotexist.com","port":443}');
             done();
         });
     });
@@ -112,7 +112,7 @@ describe('NOrigin server', function () {
             expect(response.statusCode).toEqual(500);
             expect(response.headers['content-type']).toContain('text/javascript');
             expect(error).toBeNull();
-            expect(data).toEqual('/**/ typeof cb === \'function\' && cb({"code":"ECONNREFUSED","errno":"ECONNREFUSED","syscall":"connect","address":"50.63.202.57","port":443});');
+            expect(data).toEqual('/**/ typeof cb === \'function\' && cb({"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagedoesnotexist.com","host":"thispagedoesnotexist.com","port":443});');
             done();
         });
     });
