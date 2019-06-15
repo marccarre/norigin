@@ -98,21 +98,21 @@ describe('NOrigin server', function () {
     });
 
     it('should return a HTTP 500 with the original content as a JSON string', function (done) {
-        request.get(rootUrl + '?url=https://thispagedoesnotexist.com', function (error, response, data) {
+        request.get(rootUrl + '?url=https://thispagereallydoesnotexist.com', function (error, response, data) {
             expect(response.statusCode).toEqual(500);
             expect(response.headers['content-type']).toContain('application/json');
             expect(error).toBeNull();
-            expect(data).toEqual('{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagedoesnotexist.com","host":"thispagedoesnotexist.com","port":443}');
+            expect(data).toEqual('{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagereallydoesnotexist.com"}');
             done();
         });
     });
 
     it('should return a HTTP 500 with the original content as JavaScript when callback= is provided', function (done) {
-        request.get(rootUrl + '?url=https://thispagedoesnotexist.com&callback=cb', function (error, response, data) {
+        request.get(rootUrl + '?url=https://thispagereallydoesnotexist.com&callback=cb', function (error, response, data) {
             expect(response.statusCode).toEqual(500);
             expect(response.headers['content-type']).toContain('text/javascript');
             expect(error).toBeNull();
-            expect(data).toEqual('/**/ typeof cb === \'function\' && cb({"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagedoesnotexist.com","host":"thispagedoesnotexist.com","port":443});');
+            expect(data).toEqual('/**/ typeof cb === \'function\' && cb({"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagereallydoesnotexist.com"});');
             done();
         });
     });
