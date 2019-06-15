@@ -13,7 +13,7 @@
     "jasmine": "3.4.0",
     "nyc": "14.1.1",
     "jshint": "2.10.2",
-    "jslint": "0.12.0"
+    "jslint": "0.12.1"
   },
   "engines": {
     "node": "8.1.x",
