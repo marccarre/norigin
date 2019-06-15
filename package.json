@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "jasmine": "3.3.0",
-    "istanbul": "0.4.5",
+    "nyc": "14.1.1",
     "jshint": "2.9.6",
     "jslint": "0.12.0"
   },
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "istanbul cover jasmine",
+    "test": "nyc jasmine",
     "lint": "jshint *.js spec/*.js && jslint *.js spec/*.js"
   },
   "repository": {
