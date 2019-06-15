@@ -10,7 +10,7 @@
     "url": "0.11.0"
   },
   "devDependencies": {
-    "jasmine": "3.3.0",
+    "jasmine": "3.4.0",
     "nyc": "14.1.1",
     "jshint": "2.9.6",
     "jslint": "0.12.0"
