@@ -102,7 +102,7 @@ describe('NOrigin server', function () {
             expect(response.statusCode).toEqual(500);
             expect(response.headers['content-type']).toContain('application/json');
             expect(error).toBeNull();
-            expect(data).toEqual('{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagereallydoesnotexist.com"}');
+            expect(data).toEqual('{"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagereallydoesnotexist.com"}');
             done();
         });
     });
@@ -112,7 +112,7 @@ describe('NOrigin server', function () {
             expect(response.statusCode).toEqual(500);
             expect(response.headers['content-type']).toContain('text/javascript');
             expect(error).toBeNull();
-            expect(data).toEqual('/**/ typeof cb === \'function\' && cb({"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagereallydoesnotexist.com"});');
+            expect(data).toEqual('/**/ typeof cb === \'function\' && cb({"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"thispagereallydoesnotexist.com"});');
             done();
         });
     });
