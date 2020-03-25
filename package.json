@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "jasmine": "3.4.0",
-    "nyc": "14.1.1",
+    "nyc": "15.0.0",
     "jshint": "2.10.2",
     "jslint": "0.12.1"
   },
