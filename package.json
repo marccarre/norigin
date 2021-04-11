@@ -5,19 +5,19 @@
   "main": "server.js",
   "dependencies": {
     "express": "4.17.1",
-    "uuid": "3.3.2",
     "request": "2.88.0",
-    "url": "0.11.0"
+    "url": "0.11.0",
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "jasmine": "3.4.0",
-    "nyc": "15.0.0",
     "jshint": "2.10.2",
-    "jslint": "0.12.1"
+    "jslint": "0.12.1",
+    "nyc": "15.0.0"
   },
   "engines": {
-    "node": "v12.4.x",
-    "npm": "6.9.x"
+    "node": "v15.14.x",
+    "npm": "7.7.x"
   },
   "scripts": {
     "start": "node server.js",
